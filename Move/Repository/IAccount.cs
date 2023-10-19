@@ -1,6 +1,11 @@
-﻿namespace Move.Repository
+﻿using Move.Model;
+
+namespace Move.Repository
 {
-    public class IAccount
-    {
-    }
+        public interface IAccount
+        {
+            Task<bool> SignUpAsync(User user);
+            Task<bool> LogInAsync(string email, string password);
+        }
+    
 }

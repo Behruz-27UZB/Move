@@ -1,6 +1,10 @@
-﻿namespace Move.Repository
+﻿using Move.Dataleryer;
+using Move.Model;
+
+namespace Move.Repository
 {
-    public class Account
+    public class Account  
     {
+       
     }
 }
