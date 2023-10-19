@@ -9,6 +9,7 @@ namespace Move.Dataleryer
             : base(options) { }
 
 
+        public DbSet<User> Users { get; set; }
         public DbSet<Moveis> Moveiss { get; set; }
         public DbSet<Author> Authors { get; set; }
     }
