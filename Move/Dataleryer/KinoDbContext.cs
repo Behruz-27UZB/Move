@@ -5,6 +5,8 @@ namespace Move.Dataleryer
 {
     public class KinoDbContext:DbContext
     {
+        internal object Users;
+
         public KinoDbContext(DbContextOptions<KinoDbContext> options)
             : base(options) { }
 
