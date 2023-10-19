@@ -1,9 +1,11 @@
-﻿using Move.Dataleryer;
+﻿using LinqToDB;
+using Move.Dataleryer;
 using Move.Model;
+using System.Linq;
 
 namespace Move.Repository
 {
-    public class Account  :IAccount
+    public class Account: IAccount
     {
         private readonly KinoDbContext _slup;
 
