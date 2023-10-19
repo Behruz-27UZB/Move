@@ -1,11 +1,19 @@
-﻿namespace Move.Model
+﻿using LinqToDB.Mapping;
+
+namespace Move.Model
 {
     public class Moveis
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Discreption { get; set; }
-        public string Inage { get; set; }
-        public virtual Author? Authore { get; set; }
+        internal int Id;
+        internal string Image;
+
+        public class Author
+        {
+            [Identity]
+            public int Id { get; set; }
+
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+        }
     }
 }
